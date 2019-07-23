@@ -1,5 +1,5 @@
 package martian.robot;
 
 public abstract class MoveStrategy {
-    public abstract char move(char instruction);
+    public abstract void move(Robot robot);
 }

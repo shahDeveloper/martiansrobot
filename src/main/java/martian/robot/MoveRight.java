@@ -2,23 +2,26 @@ package martian.robot;
 
 import static martian.robot.RobotConstants.*;
 
-public class MoveRight extends MoveStrategy
-{
+public class MoveRight extends MoveStrategy {
+
     @Override
-    public char move(char orientation) {
+    public void move(Robot robot) {
+        char orientation = robot.getPosition().getOrientation();
+        RobotPosition position = robot.getPosition();
+
         switch (orientation) {
             case N:
-                return E;
+                position.setOrientation(E);
+                break;
             case S:
-                return W;
+                position.setOrientation(W);
+                break;
             case W:
-                return N;
+                position.setOrientation(N);
+                break;
             case E:
-                return S;
-            default:
-                return orientation;
+                position.setOrientation(S);
+                break;
         }
-
-        //return orientation;
     }
 }

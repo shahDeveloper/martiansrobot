@@ -49,17 +49,11 @@ public class RobotPosition {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(getX(), getY(), getOrientation());
     }
 
     @Override
     public String toString() {
         return x + " " + y + " " + orientation;
-       /* return "RobotPosition{" +
-                "x=" + x +
-                ", y=" + y +
-                ", orientation=" + orientation +
-                '}';*/
     }
 }
