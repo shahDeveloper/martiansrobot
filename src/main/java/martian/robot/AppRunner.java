@@ -13,6 +13,10 @@ public class AppRunner {
     public static void main(String[] args) throws IOException {
 
 
+        System.out.println("Surface boundaries are hardcoded to 5 3 for now.\n1. Enter position in one line e.g. 1 1 E and press enter" +
+                "\n2. Enter instruction in another line e.g. RFRFRFRF and press enter." +
+                "\n3. Type run and press enter. You should see an output." +
+                "\n4. You can repeat the above as many times as you want. To terminate the program type exit and press enter.");
         try (InputStreamReader inputStreamReader = new InputStreamReader(System.in);
              BufferedReader reader = new BufferedReader(inputStreamReader);) {
 
