@@ -2,6 +2,7 @@
 - Java Solution for Martian Robots.
 - Build the project with maven.
 - Run the main method in AppRunner class.
+- Requires Java 8 to run.
 
 Surface boundaries are hardcoded to 5 3 for now. Once you start the app by running the main method follow these instruction/commands.
 
